@@ -1,8 +1,16 @@
 {
   "name": "rebasing",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "true",
   "repository": "git@github.com:elvn5/rebasing.git",
   "author": "Ermek <ermeka@infinidat.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "npx webpack"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
