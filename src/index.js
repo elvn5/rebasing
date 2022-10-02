@@ -1,12 +1,9 @@
 import join from 'lodash/join';
+import Modal from "./scripts/Modal";
 
-function component() {
-  const element = document.createElement('div');
+document.querySelector("#btn").addEventListener("click", () => {
+  const myModal = new Modal("400px", "400px")
+  myModal.openModal()
+})
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = join(['Hello', 'webpack'], ' ');
 
-  return element;
-}
-
-document.body.appendChild(component());
